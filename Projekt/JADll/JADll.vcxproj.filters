@@ -4,6 +4,6 @@
     <None Include="mojadll.def" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="..\..\..\..\OneDrive\Pulpit\mojadll.asm" />
+    <MASM Include="mojadll.asm" />
   </ItemGroup>
 </Project>

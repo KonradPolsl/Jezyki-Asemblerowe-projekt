@@ -1,3 +1,2 @@
 ﻿  JAApp.cpp
-C:\Users\kszro\source\repos\JAApp\JAApp\JAApp.cpp(67,20): warning C4244: "=": konwersja z "uint64_t" do "int", możliwa utrata danych
   JAApp.vcxproj -> C:\Users\kszro\source\repos\JAApp\x64\Debug\JAApp.exe

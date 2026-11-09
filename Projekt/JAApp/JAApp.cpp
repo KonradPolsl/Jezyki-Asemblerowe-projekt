@@ -33,12 +33,12 @@ std::cout << "Wynik MyProc1C: " << a << '\n';
 
 int main(int argc, char* argv[])
 {
-    using MyProc1Func = std::uint64_t(*)(std::uint64_t, std::uint64_t);
+    using MyProc1Func = void(*)(std::int16_t*, std::size_t);
 
    
 
    
-        HMODULE hDll = LoadLibraryW(L"JADll.dll");
+        HMODULE hDll = LoadLibraryW(L"C:\\Users\\kszro\\source\\repos\\JAApp\\x64\\Debug\\JADll.dll");
 
         if (!hDll)
         {
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
        
 
 
-        int x = 3, y = 4, z = 0, a=0;
+      /*  int x = 3, y = 4, z = 0, a=0;
 
         z = MyProc1(x, y);
       
@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
         std::cout << "Wynik MyProc1: " << z << '\n';
         
 
-        FreeLibrary(hDll);
+        FreeLibrary(hDll);*/
      
     
         // ODCZYTYWANIE DANYCH
@@ -189,11 +189,17 @@ int main(int argc, char* argv[])
         //cout << p_we.tellg() << endl;
 
 
-       
+       /*
         for (int i = 10000;i <100000;i++)
         {
             cout << data[i] << endl;
-        }
+        }*/
+
+
+        cout << "probka audio nr 11 to: " << data[10] << endl;
+        MyProc1(data.data(),data.size());
+
+        cout << "probka audio nr 11 po zmianie wartosci: " << data[10] << endl;
             
         return 0;
 }
